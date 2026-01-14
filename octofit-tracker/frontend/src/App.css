@@ -1,0 +1,100 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #222;
+}
+
+.App {
+  text-align: center;
+  background: #f7fafd;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #512a97 0%, #ecd8ff 100%);
+  box-shadow: 0 2px 8px rgba(80, 80, 80, 0.1);
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+h2 {
+  color: #512a97;
+  margin-bottom: 1rem;
+}
+
+ul {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(80, 80, 80, 0.07);
+  padding: 1rem;
+}
+li {
+  color: #512a97;
+  font-size: 1.1rem;
+}
+
+table {
+  background: #ecd8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(80, 80, 80, 0.07);
+  color: #222;
+}
+th {
+  background: #512a97;
+  color: #fff;
+}
+td {
+  background: #fff;
+  color: #512a97;
+}
+
+button, .btn {
+  background: linear-gradient(90deg, #512a97 0%, #ecd8ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(80, 80, 80, 0.07);
+  transition: background 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #ecd8ff 0%, #512a97 100%);
+  color: #ffd700;
+}
+
+.App-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+  float: left;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.App-link {
+  color: #512a97;
+  text-decoration: underline;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
