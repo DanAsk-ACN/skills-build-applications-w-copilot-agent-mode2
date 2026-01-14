@@ -20,11 +20,19 @@ from rest_framework.routers import DefaultRouter
 from .views import UserViewSet, TeamViewSet, ActivityViewSet, WorkoutViewSet, LeaderboardViewSet
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-import os
 
+import os
 
 CODESPACE_NAME = os.environ.get('CODESPACE_NAME')
 base_url = f'https://{CODESPACE_NAME}-8000.app.github.dev' if CODESPACE_NAME else 'http://localhost:8000'
+
+# Initialize and register router
+router = DefaultRouter()
+router.register(r'users', UserViewSet)
+router.register(r'teams', TeamViewSet)
+router.register(r'activities', ActivityViewSet)
+router.register(r'workouts', WorkoutViewSet)
+router.register(r'leaderboard', LeaderboardViewSet)
 
 @api_view(['GET'])
 def api_root(request):
